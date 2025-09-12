@@ -36,6 +36,13 @@ body {
     justify-content: center;
 }
 
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+}
+
 p {
     color:rgb(0, 0, 0);
 }
@@ -58,7 +65,7 @@ p {
     gap:20px;
     background-color: white;
     border-radius: 32px;
-    padding: 100px 51px 100px 50px;
+    padding: 100px 50px 100px 50px;
 }
 
 .icon-container{
