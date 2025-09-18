@@ -1,94 +1,74 @@
-@font-face {
+    @font-face {
       font-family: "ttcommons";
-      src: url(../fonts/TT-Commons-Regular.otf);
+      src: url("../fonts/TT-Commons-Regular.otf");
       font-style: normal;
       font-weight: normal;
-      }
-@font-face {
+    }
+    @font-face {
       font-family: "ttcommons";
-      src: url(../fonts/TT-Commons-Bold.otf);
+      src: url("../fonts/TT-Commons-Bold.otf");
       font-style: normal;
       font-weight: bold;
-      }
-:root {
-      --page-bg: #f3f3f4;      /* cor de fundo da página (cinza claro) */
-      --card-bg: #ffffff;      /* fundo do "cartão" branco */
+    }
+    :root {
+      --text-white: #ffffff;      /* texto */
       --header-bg: #0a0a0a;    /* barra superior preta */
-      --text-dark: #111111;    /* cor principal do texto */
-      --muted: #666666;        /* texto secundário */
-      }
+      --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
+    }
 
     /* reset/estilos base */
-* { box-sizing: border-box; }
-html,body { height:100%; margin:0; }
-body {
-      background: var(--page-bg);
+    * { box-sizing: border-box; }
+    html,body { height:100%; margin:0; }
+    body {
+      background-image: url("../assets/mulher-engenheira.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0px -100px;
       font-family: "ttcommons";
       font-weight: normal;
-      color: var(--text-dark);
-      }
+    }
 
-.card {
-      max-width: 1920px;
-      max-height: 1000px;
-      height: 875px;
-      background-position: center top;
-      background: var(--card-bg);
+    .card {
+      max-height: -webkit-fill-available;
+      max-width: -webkit-fill-available;
       border-radius: 4px;
       overflow: hidden;           /* garante que a header preta não "vaze" */
       box-shadow: none;
-      }
+    }
 
     /* barra preta com logo à esquerda */
-.card .header {
+    .card .header {
       background: var(--header-bg);
       font-weight: bold;
       padding: 0px 30px;
       display: flex;
       align-items: center;
       gap: 12px;
-      }
-.logo {
-      color: #ffffff;
+    }
+    .logo {
+      color: var(--text-white);
       font-weight: bold;
       font-size: 28px;
       letter-spacing: 0.2px;
-      }
+    }
 
     /* área de conteúdo central (alinhada ao centro) */
-.card .content {
-      padding: 160px 40px;
+    .card .content {
+      background: var(--muted);
+      background-position: center center;
+      color: var(--text-white);
+      padding: 500px 0px;
       text-align: center;
-      }
-.title {
-      margin: 0 0 8px 0;
-      font-size: 40px;
+    }
+    .title {
+      margin: -150px 0 8px 0;
+      font-size: 80px;
       font-weight: bold;
-      }
-.subtitle {
-      margin: 0 0 26px 0;
-      font-size: 36px;
-      font-weight: bold;
-      }
-
-.emoji {
-      font-size: 96px;
-      line-height: 96px;
-      text-align: center;
-      margin: 0px auto 22px auto;
-      }
-
-.foot {
-      color: var(--muted);
-      font-weight: bold;
-      font-size: 30px;
-      }
+    }
 
     /* responsividade simples para telas pequenas */
-@media (max-width: 520px) {
+    @media (max-width: 520px) {
       .card { margin: 12px; }
       .card .content { padding: 40px 18px; }
-      .emoji { width: 72px; height:72px; line-height:72px; font-size:36px; }
       .title { font-size:18px; }
-      .subtitle { font-size:16px; }
-      }
+    }
