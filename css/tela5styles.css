@@ -1,12 +1,12 @@
 @font-face {
       font-family: "ttcommons";
-      src: url(fonts/TT-Commons-Regular.otf);
+      src: url(../fonts/TT-Commons-Regular.otf);
       font-style: normal;
       font-weight: normal;
       }
 @font-face {
       font-family: "ttcommons";
-      src: url(fonts/TT-Commons-Bold.otf);
+      src: url(../fonts/TT-Commons-Bold.otf);
       font-style: normal;
       font-weight: bold;
       }
