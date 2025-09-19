@@ -22,6 +22,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'TT Commons Pro', sans-serif;
     background-color: black;
@@ -30,17 +34,19 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0 100%), url("/assets/engineer1.png");
-    display:flex;
-    align-items: center;
+    margin: 0;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 header {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 50px;
-    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    color:white;
+    height:10%;
 }
 
 p {
@@ -48,16 +54,18 @@ p {
 }
 
 .arrow-back{
-    content:url("/assets/arrow.svg");
-    align-self:flex-start;
+    margin-left: 1rem;
 }
 
 .mensagem {
+    text-align: center;
     color:white;
     font-size:32px;
+    font-weight: 500;
 }   
 
 .panel{
+    margin: auto 80px auto 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,6 +74,14 @@ p {
     background-color: white;
     border-radius: 32px;
     padding: 100px 50px 100px 50px;
+    flex-wrap: wrap;
+}
+
+.container-button{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    background: red;
 }
 
 .icon-container{
@@ -78,4 +94,9 @@ p {
     content:url("/assets/cat.webp");
     width:400px;
     height:400px;
+}
+
+.icone {
+    margin-left: 5rem;
+    max-width: 8%;
 }
