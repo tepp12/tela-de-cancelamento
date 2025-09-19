@@ -12,63 +12,83 @@
     }
     :root {
       --text-white: #ffffff;      /* texto */
-      --header-bg: #0a0a0a;    /* barra superior preta */
+      --header-bg: #000000;    /* barra superior preta */
       --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
     }
 
     /* reset/estilos base */
-    * { box-sizing: border-box; }
-    html,body { height:100%; margin:0; }
-    body {
-      background-image: url("../assets/mulher-engenheira.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center top;
+    * { 
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    html,body { 
+      height:100%;
+      overflow: hidden;
       font-family: "ttcommons";
       font-weight: normal;
     }
 
-    .card {
-      max-height: -webkit-fill-available;
-      max-width: -webkit-fill-available;
-      border-radius: 4px;
-      overflow: hidden;           /* garante que a header preta não "vaze" */
-      box-shadow: none;
-    }
-
     /* barra preta com logo à esquerda */
-    .card .header {
-      background: var(--header-bg);
-      font-weight: bold;
-      padding: 0px 30px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .logo {
-      color: var(--text-white);
-      font-weight: bold;
-      font-size: 28px;
-      letter-spacing: 0.2px;
-    }
+    header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--header-bg);
+            color: var(--text-white);
+            flex-wrap: wrap;
+        }
 
-    /* área de conteúdo central (alinhada ao centro) */
-    .card .content {
-      background: var(--muted);
-      background-position: center center;
-      color: var(--text-white);
-      padding: 500px 0px;
-      text-align: center;
-    }
-    .title {
-      margin: -150px 0 8px 0;
-      font-size: 80px;
-      font-weight: bold;
-    }
+        /* Logo dentro do cabeçalho */
+        .logo img {
+          position: relative;
+          flex-shrink: 0;
+          max-width: 100%;  /* Garante que a imagem ocupe o máximo possível sem ultrapassar o limite */
+          height: auto;     /* Mantém a proporção da imagem */
+          width: auto;      /* Impede que a largura da imagem seja distorcida */
+          max-height: 20px; /* Define uma altura máxima para o logo (ajuste conforme necessário) */
+        }
+
+
+
+    main {
+  position: relative;
+  background-image: url('../assets/mulher-engenheira.jpg'); /* substitua pelo caminho real */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* ocupa a altura total da tela */
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+main .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: var(--muted); /* ajustável */
+  z-index: 1;
+}
+
+main .content {
+  position: relative;
+  z-index: 2;
+} 
+
+main h1 {
+  font-size: 80px;
+  margin-bottom: 1rem;
+}
 
     /* responsividade simples para telas pequenas */
-    @media (max-width: 520px) {
-      .card { margin: 12px; }
-      .card .content { padding: 40px 18px; }
-      .title { font-size:18px; }
-    }
+    @media (max-width: 768px) {
+  main h1 {
+    font-size: 40px;
+  }
+}
