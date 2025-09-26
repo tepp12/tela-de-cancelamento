@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cancelamento/pagina2</title>
     <link rel="stylesheet" href="css/tela2.css">
+    <link rel="shortcut icon" href="assets/logoplaceholder.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/logoplaceholder.png" type="image/x-icon">
     
 
@@ -32,7 +33,7 @@
 
             <article>
                 <h2>Selecione o motivo da sua saída:</h2>
-                <select id="seletor" onchange="redirect(this.value)" >
+                <select id="seletor" onclick="redirect(this.value)" >
                     
                     <option value="#" class="item" id="item1">Dificuldades com o suporte ao cliente.
                     </option>
@@ -49,9 +50,11 @@
 
                 </select>
                 <div id="enviar-container">
-                    <button id="enviar">
-                        <p>enviar</p>
-                    </button>
+                    <a href="#">
+                        <button id="enviar">
+                            <p>enviar</p>
+                        </button>
+                    </a>
                 </div>
             </article>
         </section>
