@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelamento/pagina2</title>
+    <link rel="stylesheet" href="css/tela2.css">
+    <link rel="shortcut icon" href="assets/logoplaceholder.png" type="image/x-icon">
+    
+
+</head>
+
+<body id="background">
+
+
+    <header>
+
+        <img src="assets/LOGO_home_svg.webp" alt="Logo engplay">
+
+    </header>
+
+    <main>
+        <div class="voltar">
+            <a href="#">
+                <img src="assets/arrow.svg" alt="pagina anterior" id="seta"></a>
+                </svg>
+            </a>
+        </div>
+        <section>
+            <h1>Dê um feedback para que possamos te ajudar</h1>
+
+            <article>
+                <h2>Selecione o motivo da sua saída:</h2>
+                <select id="seletor" onchange="redirect(this.value)" >
+                    
+                    <option value="#" class="item" id="item1">Dificuldades com o suporte ao cliente.
+                    </option>
+                    <option value="#" class="item" id="item2">Não encontrei conteúdo que procurava.</option>
+                    <option value="#" class="item" id="item3">A qualidade do curso que fiz não atendeu às minhas expectativas.</option>
+                    <option value="#" class="item" id="item4">Estou fazendo outros cursos em outra plataforma.</option>
+                    <option value="#" class="item" id="item5">Por hora, estou sem limites no cartão.</option>
+                    <option value="#" class="item" id="item6">Não tenho interesse em cursos no momento</option>
+                    <option value="#" class="item" id="item7">Já usei a plataforma e já fiz o curso que queria.
+                    </option>
+                    <option value="#" class="item" id="item8">Não tenho tempo de usar a plataformamcomo queria.</option>
+                    <option value="#" class="item" id="item9">Falta de atualizações regulares ou novos conteúdos.
+                    </option>
+
+                </select>
+                <div id="enviar-container">
+                    <button id="enviar">
+                        <p>enviar</p>
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/js/tela2.js"></script>
+</body>
+
+
+
+</html>
