@@ -1,0 +1,199 @@
+:root {
+    --header-h: 80px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../assets/fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    position: relative;
+    overflow: auto;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-h);
+    background: #000;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    z-index: 12;
+
+}
+
+
+.topbar .logo {
+    height: 48px;
+    display: block;
+    user-select: none;
+    padding-left: 60px;
+
+}
+
+.back-btn {
+    position: fixed;
+    left: 18px;
+    top: calc(var(--header-h) + 14px);
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+    z-index: 11;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 0;
+
+}
+
+.back-btn img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
+
+}
+
+.content {
+    position: relative;
+    z-index: 8;
+    min-height: calc(100vh - var(--header-h));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 28px;
+}
+
+
+.headline {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    max-width: 900px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+    padding: 0 12px;
+}
+
+.card {
+    width: 640px;
+    max-width: 92%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 36px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    text-align: left;
+}
+
+.card-title {
+    margin: 0 0 18px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #111;
+}
+
+.benefits {
+    margin: 6px 6px 20px 6px;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.benefits p {
+    margin: 12px 0;
+}
+
+.plus {
+    color: #f39c12;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 12px;
+}
+
+.btn {
+    padding: 12px 26px;
+    border-radius: 24px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn.gray {
+    background: #333;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn.orange {
+    background: #f5a623;
+    color: #000;
+    box-shadow: 0 6px 14px rgba(245, 166, 35, 0.18);
+}
+
+@media (max-width: 720px) {
+    .headline {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 28px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .back-btn {
+        left: 12px;
+        top: calc(var(--header-h) + 10px);
+    }
+
+    .topbar {
+        padding-left: 12px;
+    }
+}
