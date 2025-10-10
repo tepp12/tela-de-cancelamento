@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('../fonts/TT-Commons-Regular.otf') format('woff2'),
+       url('../fonts/TT-Commons-Regular.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('../fonts/TT-Commons-Bold.otf') format('woff2'),
+       url('../fonts/TT-Commons-Bold.otf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 :root {
     --header-h: 80px;
 }
@@ -13,7 +31,7 @@ body {
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: 'TT Commons Pro', sans-serif;
     background: url('../assets/fundo.png') no-repeat center center fixed;
     background-size: cover;
     color: #000;
@@ -36,21 +54,21 @@ body::before {
     top: 0;
     left: 0;
     right: 0;
-    height: var(--header-h);
+    height: 65px;
     background: #000;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 25px;
     z-index: 12;
 
 }
 
 
 .topbar .logo {
-    height: 48px;
+    height: 35px;
     display: block;
     user-select: none;
-    padding-left: 60px;
+    padding-left: 1px;
 
 }
 
@@ -58,25 +76,24 @@ body::before {
     position: fixed;
     left: 18px;
     top: calc(var(--header-h) + 14px);
-    width: 44px;
-    height: 44px;
+    width: 64px;
+    height: 64px;
     border-radius: 8px;
     border: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(2px);
+    background: transparent;
+    backdrop-filter: none;
     cursor: pointer;
     z-index: 11;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     padding: 0;
 
 }
 
 .back-btn img {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     display: block;
     filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
 
@@ -99,7 +116,7 @@ body::before {
     margin: 0;
     text-align: center;
     color: #fff;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 700;
     max-width: 900px;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
@@ -107,7 +124,7 @@ body::before {
 }
 
 .card {
-    width: 640px;
+    width: 750px;
     max-width: 92%;
     background: #fff;
     border-radius: 12px;
@@ -118,7 +135,7 @@ body::before {
 
 .card-title {
     margin: 0 0 18px 0;
-    font-size: 20px;
+    font-size: 45px;
     text-align: center;
     color: #111;
 }
@@ -126,7 +143,7 @@ body::before {
 .benefits {
     margin: 6px 6px 20px 6px;
     line-height: 1.9;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .benefits p {
@@ -151,7 +168,7 @@ body::before {
     padding: 12px 26px;
     border-radius: 24px;
     border: none;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
 }
 
