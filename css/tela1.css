@@ -1,26 +1,31 @@
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url('path/to/fonts/TTCommonsPro-Regular.woff2') format('woff2'),
-       url('path/to/fonts/TTCommonsPro-Regular.woff') format('woff');
+  src: url('../fonts/TT-Commons-Regular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url('path/to/fonts/TTCommonsPro-Bold.woff2') format('woff2'),
-       url('path/to/fonts/TTCommonsPro-Bold.woff') format('woff');
+  src: url('../fonts/TT-Commons-Bold.otf') format('otf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url('path/to/fonts/TTCommonsPro-Medium.woff2') format('woff2'),
-       url('path/to/fonts/TTCommonsPro-Medium.woff') format('woff');
+  src: url('../fonts/TT-Commons-Medium.otf') format('otf');
   font-weight: medium;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url("../fonts/TT-Commons-Light.otf") format('otf');
+  font-weight: light;
+  font-style: normal;
+}
+
 
 * {
   box-sizing: border-box;
@@ -38,11 +43,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     color:inherit;
+}
+
+ul {
+    font-weight: light;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    gap:3rem;
+    margin-right:3rem;
+    font-size: 18px;
 }
 
 main {
@@ -53,9 +80,20 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
-    background: black;
+    background-color: black;
     color:white;
-    height:10%;
+    width:100%;
+    height:9vh;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #676767;
+    color:white;
+    justify-content: space-between;
+    height:6.5rem;
 }
 
 p {
@@ -107,7 +145,9 @@ p {
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .icon-container{
@@ -120,18 +160,18 @@ p {
 }
 
 .icon {
-    min-width: 32px;
-    min-height: 32px;
-    width:200px;
-    height:200px;
+    min-width:12rem;
+    min-height:12rem;
+    max-width: 12rem;
+    max-height: 12rem;
 }
 
 .button-suporte {
     border-radius: 70px;
     background-color: #FF9900;
-    min-width: 293px;
-    min-height: 82px;
-    font-size: 36px;
+    min-width: 15vw;
+    min-height: 6vh;
+    font-size: 2rem;
     border:0;
     font-weight: medium;
 }
@@ -139,15 +179,24 @@ p {
 .button-perder {
     border-radius:70px;
     background-color: #282828;
-    font-size:36px;
+    font-size:2rem;
     color:white;
-    min-width: 293px;
-    min-height:83px;
+    min-width: 15vw;
+    min-height: 6vh;
     font-weight: medium;
     border:0;
 }
 
 .icone {
     margin-left: 5rem;
-    max-width: 8%;
+    min-width: 10vw;
+    max-width: 10vw;
+}
+
+.footer-text{
+    font-weight: light;
+    font-family: 'TT Commons Pro';
+    color:white;
+    font-size:18px;
+    margin-left:3rem;
 }
