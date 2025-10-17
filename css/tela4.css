@@ -1,75 +1,89 @@
-body {
-    background-image: url('../assets/Imagem\ do\ WhatsApp\ de\ 2025-09-12\ à\(s\)\ 16.52.19_51253134.jpg ');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    
-    background-color: #333; 
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    position: relative; 
-}
+    @font-face {
+      font-family: "ttcommons";
+      src: url("../fonts/TT-Commons-Regular.otf");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "ttcommons";
+      src: url("../fonts/TT-Commons-Bold.otf");
+      font-style: normal;
+      font-weight: bold;
+    }
+    :root {
+      --text-white: #ffffff;      /* texto */
+      --header-bg: #000000;    /* barra superior preta */
+      --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
+    }
+
+    /* reset/estilos base */
+    * { 
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    html,body { 
+      height:100%;
+      overflow: hidden;
+      font-family: "ttcommons";
+      font-weight: normal;
+    }
+
+    /* barra preta com logo à esquerda */
+    header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--header-bg);
+            color: var(--text-white);
+            flex-wrap: wrap;
+        }
+
+        /* Logo dentro do cabeçalho */
+        .logo {
+          margin-left:10rem;
+        }
 
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1; 
+
+    main {
+  position: relative;
+  background-image: url('../assets/mulher-engenheira.jpg'); /* substitua pelo caminho real */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* ocupa a altura total da tela */
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.header {
-    width: 100%;
-    padding: 20px 0;
-    background-color: #000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    box-sizing: border-box;
-    z-index: 1; 
+main .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: var(--muted); /* ajustável */
+  z-index: 1;
 }
 
-.logo {
-    margin-left: 20px;
+main .content {
+  position: relative;
+  z-index: 2;
+} 
+
+main h1 {
+  font-size: 80px;
+  margin-bottom: 1rem;
 }
 
-.logo img {
-    height: 40px;
-    display: block;
+    /* responsividade simples para telas pequenas */
+    @media (max-width: 768px) {
+  main h1 {
+    font-size: 40px;
+  }
 }
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 0; 
-    flex-grow: 0;
-    justify-content: center;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin: 0;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
-    line-height: 1.3; 
-}
- 
