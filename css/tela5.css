@@ -41,13 +41,8 @@
         }
 
         /* Logo dentro do cabeçalho */
-        .logo img {
-          position: relative;
-          flex-shrink: 0;
-          max-width: 100%;  /* Garante que a imagem ocupe o máximo possível sem ultrapassar o limite */
-          height: auto;     /* Mantém a proporção da imagem */
-          width: auto;      /* Impede que a largura da imagem seja distorcida */
-          max-height: 20px; /* Define uma altura máxima para o logo (ajuste conforme necessário) */
+        .logo {
+          margin-left:10rem;
         }
 
 
