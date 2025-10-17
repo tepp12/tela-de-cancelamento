@@ -71,14 +71,32 @@ main .overlay {
   z-index: 1;
 }
 
-main .content {
+main .content  {
   position: relative;
   z-index: 2;
 } 
 
 main h1 {
   font-size: 80px;
-  margin-bottom: 1rem;
+  margin-bottom: 10rem;
+}
+
+.botao-voltar {
+  position: fixed;          /* Fixa o botão na tela */
+  bottom: 20px;             /* Distância do fundo da janela */
+  right: 20px;              /* Distância da borda direita */
+  padding: 10px 20px;
+  background-color: var(--text-white);
+  color: var(--header-bg);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #ddd; /* muda a cor quando passa o mouse */
 }
 
     /* responsividade simples para telas pequenas */
