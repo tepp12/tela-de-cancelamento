@@ -6,6 +6,12 @@
 
 }
 
+:root {
+      --text-white: #ffffff;      /* texto */
+      --header-bg: #000000;    /* barra superior preta */
+      --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
+    }
+
 
 #background{
     display: flex;
@@ -21,18 +27,20 @@
 body > main{
     flex: 1 1 0;
 }
-header{
-    display: flex;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-}
+header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--header-bg);
+            color: var(--text-white);
+            flex-wrap: wrap;
+        }
 
-header > img{
-    height: 2rem;
-    padding: 1rem;
-}   
+        /* Logo dentro do cabeçalho */
+        .logo {
+          margin-left:10rem;
+        }
 h1{
     color: #fff;
     text-align: center;

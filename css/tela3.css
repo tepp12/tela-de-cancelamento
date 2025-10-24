@@ -18,7 +18,10 @@
 
 :root {
     --header-h: 80px;
-}
+    --text-white: #ffffff;      /* texto */
+    --header-bg: #000000;    /* barra superior preta */
+    --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
+    }
 
 * {
     box-sizing: border-box;
@@ -30,47 +33,42 @@ body {
 }
 
 body {
-    margin: 0;
-     font-family: 'TT Commons Pro', sans-serif;
-    background: url('../assets/fundo.png') no-repeat center center fixed;
+    font-family: 'TT Commons Pro', sans-serif;
+    background-color: black;
     background-size: cover;
-    color: #000;
-    position: relative;
-    overflow: auto;
-}
-
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 1;
-}
-
-
-.topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 65px;
-    background: #000;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0 100%), url("../assets/fundo.png");
+    margin: 0;
     display: flex;
-    align-items: center;
-    padding-left: 25px;
-    z-index: 12;
-
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
-.topbar .logo {
-    height: 35px;
-    display: block;
-    user-select: none;
-    padding-left: 1px;
 
-}
+
+header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--header-bg);
+            color: var(--text-white);
+            flex-wrap: wrap;
+            z-index: 9999;
+        }
+
+        /* Logo dentro do cabeçalho */
+        .logo {
+          margin-left:10rem;
+        }
+
+
+
 
 .back-btn {
     position: fixed;
