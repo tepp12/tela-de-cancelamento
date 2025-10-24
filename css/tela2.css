@@ -6,6 +6,13 @@
 
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 :root {
       --text-white: #ffffff;      /* texto */
       --header-bg: #000000;    /* barra superior preta */
@@ -13,20 +20,23 @@
     }
 
 
-#background{
+body {
+    font-family: 'TT Commons Pro', sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0 100%), url("../assets/engineer1.png");
+    margin: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/backgroundimagepg2.jpg) ;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto;
-    background-size: cover;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
-}
-body > main{
-    flex: 1 1 0;
-}
+
 header {
             display: flex;
             justify-content: space-between;
@@ -41,6 +51,34 @@ header {
         .logo {
           margin-left:10rem;
         }
+
+        .back-btn {
+    position: fixed;
+    left: 18px;
+    top: calc(var(--header-h) + 14px);
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: none;
+    cursor: pointer;
+    z-index: 11;
+    padding: 0;
+
+}
+
+.back-btn img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
+
+}
+
 h1{
     color: #fff;
     text-align: center;

@@ -27,14 +27,42 @@
 }
 
 :root {
-      --text-white: #ffffff;      /* texto */
-      --header-bg: #000000;    /* barra superior preta */
-      --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
+    --header-h: 80px;
+    --text-white: #ffffff;      /* texto */
+    --header-bg: #000000;    /* barra superior preta */
+    --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
     }
 
 
 * {
   box-sizing: border-box;
+}
+
+.back-btn {
+    position: fixed;
+    left: 18px;
+    top: calc(var(--header-h) + 14px);
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: none;
+    cursor: pointer;
+    z-index: 11;
+    padding: 0;
+
+}
+
+.back-btn img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
+
 }
 
 body {
