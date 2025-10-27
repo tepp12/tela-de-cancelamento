@@ -1,199 +1,133 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansation&family=Zain&display=swap');
+/* copiei o :root da tela1 e @font-face da tela3 */
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('../fonts/TT-Commons-Regular.otf') format('woff2'),
+       url('../fonts/TT-Commons-Regular.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('../fonts/TT-Commons-Bold.otf') format('woff2'),
+       url('../fonts/TT-Commons-Bold.otf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+:root {
+    --header-h: 80px;
+    --text-white: #ffffff;      /* texto */
+    --header-bg: #000000;    /* barra superior preta */
+    --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
+}
 *{
     margin: 0px;
     padding: 0px;
-
 }
-
-html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow-x: hidden;
-}
-
-:root {
-      --text-white: #ffffff;      /* texto */
-      --header-bg: #000000;    /* barra superior preta */
-      --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
-    }
-
-
-body {
-    font-family: 'TT Commons Pro', sans-serif;
-    background-color: black;
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
+body{
+    background-image: linear-gradient( to top ,  #0000008c , #0000008c) ,  url(../assets/backgroundimagepg2.jpg);
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0 100%), url("../assets/engineer1.png");
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-x: hidden;
-    overflow-y: auto;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
-
-
-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: var(--header-bg);
-            color: var(--text-white);
-            flex-wrap: wrap;
-        }
-
-        /* Logo dentro do cabeçalho */
-        .logo {
-          margin-left:10rem;
-        }
-
-        .back-btn {
-    position: fixed;
-    left: 18px;
-    top: calc(var(--header-h) + 14px);
-    width: 64px;
-    height: 64px;
-    border-radius: 8px;
-    border: none;
-    display: inline-flex;
+header{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    background: transparent;
-    backdrop-filter: none;
-    cursor: pointer;
-    z-index: 11;
-    padding: 0;
-
+    padding: 1rem 2rem;
+    background-color: var(--header-bg);
 }
-
-.back-btn img {
-    width: 90px;
+.logo {
+    margin-left: 10rem;
+}
+#back-bt{
+    display: inline-flex;
+    
+}
+#back-btn img {
+    width: 90px; 
     height: 90px;
-    display: block;
-    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.671));
 
 }
-
-h1{
-    color: #fff;
-    text-align: center;
-    margin: 2em 0em ;
-    font: 500 1.7em "Poppins" ;
-    text-shadow: 2px 2px 4px #00000088;
-}
-section{
-    margin: 0% 20%;
-}
-.item{
-    overflow: auto;
-    text-indent: 200px;
-}
-article{
-    
-    background-color:#ffffff ;
-    border-radius: 5px;
-    max-width: 90vh;
-    max-height: 45vh;
-    min-height: 40vh;
-    text-align: left;
-    margin: auto auto;
-    box-shadow: 2px 2px 6px #00000077;
-}
-
-article > h2{
-    padding: 2em 1em;
-    color: #000;
-    font: 700 1.6em "Poppins" ;
-    text-shadow: 1px 1px 1px #0000004d;
-}
-
-#seletor{
-    overflow: auto;
-    border: 1.5px solid #FF9900;
-    background-color: transparent;
-    margin: 0em 1em ;
-    width: 40vw;
+main{
+    flex-direction: column;
     display: flex;
-    cursor: pointer;
-    box-shadow: 1px 1px 5px inset #0000006c;
-    font: 500 1.2em  "Poppins";    
-    text-indent: 3px;
-    padding: 1px;
-}
-a{
-    color: #fff;
-}
-a:hover{
-    color: #FF9900;
-}
-a:visited{
-    color: #fff;
-}
-#seta{
-    background-color: transparent;
-    border: none;   
-}
-.voltar {
-    cursor: pointer;
-    display: inline-flex;    
-    margin: 1em 0em 0em 1em;
-}
-#enviar p {
-
-    padding: 8px 25px;
-    font: 400 15px "Poppins";
-    color: #fff;
     
+    min-height: 100vh;
 }
-#enviar-container{
-    text-align: right;
-    margin: 20vh 2vh;
-    padding: 10px 0px;
+#fundo-branco{
+    display: flex;
+    margin: 8% auto;
+    flex-direction: column;
+    width: 40%;
+    height: 30vh;
+    padding: 20px;
+    background-color: #f2f2f2;
+    justify-content: space-between;
 }
-#enviar{
-    border: 0px solid #000;
-    border-radius: 17em;
-    background-color: #000;
-    width: fit-content;
-    height: fit-content;
-    box-shadow: 1px 1px 2px #00000060;
-    transition: all 1s ease;
+h1{
+    text-align: center;
+    font: bold 30px 'TT Commons Pro', sans-serif;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 5px #0000008f;
+   
 }
-#enviar:hover{
-    box-shadow: 1px 1px 8px #000000e8;
+h2{
+    font: bold 25px 'TT Commons Pro', sans-serif;
+    margin: 20px;
+    text-shadow: 1px 1px 2px #0000004b;
+}
+select{
+    padding: 5px;
+    width: 80%;
+    font: normal 18px 'TT Commons Pro', sans-serif;
+    text-indent: 2px;
+    margin: 0px 20px;
+    border: solid 2px #FF9900;
+    box-shadow: inset 1px 1px 5px #0000002a;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #0000003a;
+}
+.botao-enviar{
+    font: bold 100% 'TT Commons Pro', sans-serif;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 1px 1px 4px #00000077;
+    background-color: #FF9900;
+    display: flex;
+    float: right;
+    transition: all 0.4s ease;
     cursor: pointer;
 }
-@media screen and (max-width: 800px){
-      
+.botao-enviar:hover{
+    background-color: #e68a00;
+}
+@media screen and (max-width: 850px ){
+    .logo{
+        margin-left: 0px;
+    }
+    #back-btn img {
+        width: 70px; 
+        height: 70px;
+        filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.671));
+    }
     h1{
-        font: 500 1.2em "Poppins" ;
-        margin-bottom: 50px;
+        margin: 20px;
+        font-size: 18px;
     }
-    article{
-        max-height: 200px;
-        min-height: 160px;
+    h2{
+        font-size: 18px;
+    }
+    select{
+        font-size: 16px;
+    }
+    #fundo-branco{
+        width: 80%;
+        margin: 10vh auto;
+    }
 
-    }
-    #seletor{
-        width: cover;
-        font: 500 0.7em  "Poppins";
-        
-    }
-   
-    article > h2{
-       
-        font: 700 1.1em "Poppins" ;
-    }
-    #enviar-container{
-       margin: 0vh 1vh;
-    }
-    #enviar p{
-        font-size: 70%;
-        padding: 0.8em;
-    }
 }

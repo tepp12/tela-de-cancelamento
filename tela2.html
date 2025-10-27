@@ -4,61 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancelamento/pagina2</title>
     <link rel="stylesheet" href="css/tela2.css">
+    <title>Feedback</title>
     <link rel="shortcut icon" href="assets/logoplaceholder.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/logoplaceholder.png" type="image/x-icon">
-    
-
 </head>
 
-<body id="background">
-    <header>
-        <a href="https://engplay.com.br/"><img class="logo" src="assets/LOGO_home_svg.webp" width="150" height="47" alt="logo engplay"></a>
+<body>
+    <header class="header" role="banner">
+        <a href="https://engplay.com.br/"><img class="logo" src="assets/LOGO_home_svg.webp" width="150" height="47"
+                alt="logo engplay"></a>
     </header>
-    <div class="voltar">
-        <button class="back-btn" aria-label="Voltar">
-            <img src="assets/arrow.svg" alt="Voltar" />
-        </button>
-    </div>
     <main>
-        <section>
-            <h1>Dê um feedback para que possamos te ajudar</h1>
+        <div id="back-btn">
+            <a href="tela1.html">
+                <img src="assets/arrow.svg" alt="Voltar" />
+            </a>
+        </div>
+        <h1 class="titulo-feedback">Dê um feedback para que possamos te ajudar</h1>
+        <section id="fundo-branco">
+            <h2>Selecione o motivo da sua saída:</h2>
+
+            <article class="for mulario">
+                <label for="motivo"></label>
+                <select id="motivo" name="motivo">
+                    <option value="orcamento">Está fora do meu orçamento</option>
+                    <option value="insatisfacao">Insatisfação</option>
+                    <option value="tempo">Falta de tempo</option>
+                </select>
+            </article>
 
             <article>
-                <h2>Selecione o motivo da sua saída:</h2>
-                <select id="seletor" onclick="redirect(this.value)" >
-                    
-                    <option value="#" class="item" id="item1">Dificuldades com o suporte ao cliente.
-                    </option>
-                    <option value="#" class="item" id="item2">Não encontrei conteúdo que procurava.</option>
-                    <option value="#" class="item" id="item3">A qualidade do curso que fiz não atendeu às minhas expectativas.</option>
-                    <option value="#" class="item" id="item4">Estou fazendo outros cursos em outra plataforma.</option>
-                    <option value="#" class="item" id="item5">Por hora, estou sem limites no cartão.</option>
-                    <option value="#" class="item" id="item6">Não tenho interesse em cursos no momento</option>
-                    <option value="#" class="item" id="item7">Já usei a plataforma e já fiz o curso que queria.
-                    </option>
-                    <option value="#" class="item" id="item8">Não tenho tempo de usar a plataformamcomo queria.</option>
-                    <option value="#" class="item" id="item9">Falta de atualizações regulares ou novos conteúdos.
-                    </option>
-
-                </select>
-                <div id="enviar-container">
-                    <a href="#">
-                        <button id="enviar">
-                            <p>enviar</p>
-                        </button>
-                    </a>
-                </div>
+                <button class="botao-enviar">Enviar</button>
             </article>
         </section>
     </main>
     <footer>
 
     </footer>
-    <script src="/js/tela2.js"></script>
+    <script src="js/tela2.js"></script>
 </body>
-
-
 
 </html>
