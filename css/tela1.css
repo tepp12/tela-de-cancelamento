@@ -193,7 +193,7 @@ p {
     background-color: #FF9900;
     min-width: 15rem;
     max-width:15rem;
-    min-height:6rem;
+    min-height:4rem;
     font-size: 2rem;
     border:0;
     font-weight: medium;
@@ -206,7 +206,7 @@ p {
     color:white;
     min-width: 15rem;
     max-width:10rem;
-    min-height: 6vh;
+    min-height: 4rem;
     font-weight: medium;
     border:0;
 }
