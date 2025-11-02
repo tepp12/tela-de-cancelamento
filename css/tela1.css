@@ -27,42 +27,14 @@
 }
 
 :root {
-    --header-h: 80px;
-    --text-white: #ffffff;      /* texto */
-    --header-bg: #000000;    /* barra superior preta */
-    --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
+      --text-white: #ffffff;      /* texto */
+      --header-bg: #000000;    /* barra superior preta */
+      --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
     }
 
 
 * {
   box-sizing: border-box;
-}
-
-.back-btn {
-    position: fixed;
-    left: 18px;
-    top: calc(var(--header-h) + 14px);
-    width: 64px;
-    height: 64px;
-    border-radius: 8px;
-    border: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    backdrop-filter: none;
-    cursor: pointer;
-    z-index: 11;
-    padding: 0;
-
-}
-
-.back-btn img {
-    width: 90px;
-    height: 90px;
-    display: block;
-    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
-
 }
 
 body {
@@ -112,20 +84,20 @@ main {
 }
 
 header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: var(--header-bg);
-            color: var(--text-white);
-            flex-wrap: wrap;
-            z-index: 1;
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--header-bg);
+    color: var(--text-white);
+    flex-wrap: wrap;
+    z-index: 1;
+}
 
-        /* Logo dentro do cabeçalho */
-        .logo {
-          margin-left:10rem;
-        }
+/* Logo dentro do cabeçalho */
+.logo {
+    margin-left:10rem;
+}
 
 footer {
     display: flex;
@@ -176,7 +148,7 @@ p {
     gap:75px;
     flex-wrap: wrap;
     background-color: white;
-    min-width: 5rem;
+    min-width: 20rem;
     min-height:45rem;
     border-radius: 32px;
     padding: 10rem 3rem 3rem 3rem;
@@ -187,9 +159,7 @@ p {
     display: flex;
     justify-content: space-between;
     width:100%;
-    height:100%;
     margin-bottom: 0;
-    align-self: flex-end;
     margin-top: auto;
 }
 
@@ -221,8 +191,9 @@ p {
 .button-suporte {
     border-radius: 70px;
     background-color: #FF9900;
-    min-width: 15vw;
-    min-height: 6vh;
+    min-width: 15rem;
+    max-width:15rem;
+    min-height:6rem;
     font-size: 2rem;
     border:0;
     font-weight: medium;
@@ -233,7 +204,8 @@ p {
     background-color: #282828;
     font-size:2rem;
     color:white;
-    min-width: 15vw;
+    min-width: 15rem;
+    max-width:10rem;
     min-height: 6vh;
     font-weight: medium;
     border:0;
