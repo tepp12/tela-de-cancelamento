@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela1</title>
-    <script src="./script.js"></script>
     <link rel="stylesheet" href="./css/tela1.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/logoplaceholder.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/logoplaceholder.png" type="image/x-icon">
-
 </head>
 <body>
     <header class="header" role="banner">
         <a href="https://engplay.com.br/"><img class="logo" src="assets/LOGO_home_svg.webp" width="150" height="47" alt="logo engplay"></a>
     </header>
-    <button class="back-btn" aria-label="Voltar">
-        <img src="assets/arrow.svg" alt="Voltar" />
-    </button>
     <main>
+        <a href="https://engplay.com.br/"><img class="arrow-back" src="./assets/arrow.svg"></a>
         <p class="mensagem" data-aos="fade-left" data-aos-duration="2000">Ao cancelar a inscrição hoje, voce perderá acesso a:</p>
         <div class="panel">
             <div class="all-icons">
@@ -48,7 +44,7 @@
         <p class="footer-text">Engplay – Todos os direitos reservados 2025</p>
         <ul>
             <li>Termos de uso</li>
-            <li>Politícas de Privacidade</li>
+            <li class="texto-direita">Politícas de Privacidade</li>
         </ul>
     </footer>
     </main>
@@ -56,5 +52,6 @@
     <script>
         AOS.init();
     </script>
+    <script src ="./js/tela1.js"></script>
 </body>
 </html>

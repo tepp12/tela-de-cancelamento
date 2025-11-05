@@ -24,6 +24,9 @@ const logo = document.querySelector(".logo")
 const panel = document.querySelector(".panel")
 const button1 = document.querySelector(".button-suporte")
 const button2 = document.querySelector(".button-perder")
+const footer = document.querySelector("footer")
+const footerText = document.querySelector(".footer-text")
+const list = document.querySelector("ul")
 
 
 if(isMobile.any()){
@@ -37,5 +40,11 @@ if(isMobile.any()){
 
     button2.style.minWidth = "5rem"
     button2.style.fontSize = "1.5rem"
+
+    footer.style.gap = "3rem"
+    footer.style.justifyContent = "space-between"
+    footerText.style.marginLeft = "1rem"
+    list.style.gap = "3rem"
+
     console.log("he's on phone!!!")
 }

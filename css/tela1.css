@@ -74,8 +74,11 @@ ul {
     padding: 0;
     margin:0;
     gap:3rem;
-    margin-right:3rem;
     font-size: 18px;
+}
+
+li {
+    text-align: center;
 }
 
 main {
@@ -94,16 +97,11 @@ header {
     z-index: 1;
 }
 
-/* Logo dentro do cabeçalho */
-.logo {
-    margin-left:10rem;
-}
-
 footer {
     display: flex;
     align-items: center;
     padding: 1rem;
-    background-color: #676767;
+    background-color: #000000;
     color:white;
     justify-content: space-between;
     width:100%;
@@ -113,6 +111,11 @@ p {
     text-align: center;
     font-size: 30px;
     color:rgb(0, 0, 0);
+}
+
+/* Logo dentro do cabeçalho */
+.logo {
+    margin-left:10rem;
 }
 
 .arrow-back{
@@ -189,24 +192,26 @@ p {
 }
 
 .button-suporte {
-    border-radius: 70px;
+    border-radius: 4rem;
     background-color: #FF9900;
     min-width: 15rem;
     max-width:15rem;
     min-height:6rem;
     font-size: 2rem;
+    flex:1;
     border:0;
     font-weight: medium;
 }
 
 .button-perder {
-    border-radius:70px;
+    border-radius:4rem;
     background-color: #282828;
     font-size:2rem;
     color:white;
+    flex:1;
     min-width: 15rem;
-    max-width:10rem;
-    min-height: 6vh;
+    max-width:15rem;
+    min-height: 6rem;
     font-weight: medium;
     border:0;
 }
@@ -224,4 +229,8 @@ p {
     font-size:18px;
     margin-right: auto;
     margin-left:3rem;
+}
+
+.texto-direita {
+    margin-right: 5rem;
 }
