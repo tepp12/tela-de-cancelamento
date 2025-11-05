@@ -196,7 +196,7 @@ p {
     background-color: #FF9900;
     min-width: 15rem;
     max-width:15rem;
-    min-height:6rem;
+    min-height:4rem;
     font-size: 2rem;
     flex:1;
     border:0;
@@ -210,8 +210,13 @@ p {
     color:white;
     flex:1;
     min-width: 15rem;
+<<<<<<< HEAD
     max-width:15rem;
     min-height: 6rem;
+=======
+    max-width:10rem;
+    min-height: 4rem;
+>>>>>>> 4fb448f2322ec172da78f5560f07fabb59bb2020
     font-weight: medium;
     border:0;
 }
