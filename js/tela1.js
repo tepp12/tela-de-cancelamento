@@ -44,7 +44,15 @@ if(isMobile.any()){
     footer.style.gap = "3rem"
     footer.style.justifyContent = "space-between"
     footerText.style.marginLeft = "1rem"
-    list.style.gap = "3rem"
+    if (window.screen.width <= 360) {
+        list.style.gap = "1rem"
+        footer.style.gap = "2rem"
+    } else if (window.screen.width <= 428) {
+        list.style.gap = "2rem"
+    } else {
+        footer.style.gap = "4rem"
+        list.style.gap = "3rem"
+    }
 
     console.log("he's on phone!!!")
 }
