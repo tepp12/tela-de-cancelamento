@@ -37,95 +37,84 @@ header{
     padding: 1rem 2rem;
     background-color: var(--header-bg);
 }
+
 .logo {
     margin-left: 10rem;
 }
-#back-bt{
-    display: inline-flex;
-    
-}
-#back-btn img {
-    width: 90px; 
-    height: 90px;
-    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.671));
 
-}
 main{
     flex-direction: column;
     display: flex;
-    
+    justify-content: flex-start;
     min-height: 100vh;
 }
+
 #fundo-branco{
     display: flex;
-    margin: 8% auto;
+    margin: 3rem auto;
     flex-direction: column;
-    width: 40%;
-    height: 30vh;
-    padding: 20px;
+    width: 60%;
+    height:42rem;
+    border-radius: 32px;
+    padding: 1rem;
     background-color: #f2f2f2;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:0.5rem;
 }
-h1{
+
+.arrow-back{
+    min-height: 5rem;
+    max-width: 5rem;
+    min-width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.titulo-feedback{
+    font:  3.5rem 'TT Commons Pro', sans-serif;
+    color: white;
     text-align: center;
-    font: bold 30px 'TT Commons Pro', sans-serif;
-    color: #f2f2f2;
-    text-shadow: 2px 2px 5px #0000008f;
-   
+    margin-bottom: 0px;
 }
-h2{
-    font: bold 25px 'TT Commons Pro', sans-serif;
-    margin: 20px;
-    text-shadow: 1px 1px 2px #0000004b;
+
+.texto-selecione{
+    font:  2.7rem 'TT Commons Pro', sans-serif;
+    margin: 10px;
 }
+
 select{
-    padding: 5px;
-    width: 80%;
-    font: normal 18px 'TT Commons Pro', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M16 20.5333L8 12.5333L9.86667 10.6667L16 16.8L22.1333 10.6667L24 12.5333L16 20.5333Z' fill='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 0.5rem;
+    text-overflow: ellipsis;
+    padding: 1rem;
+    width: 100%;
+    font: normal 2rem 'TT Commons Pro', sans-serif;
     text-indent: 2px;
-    margin: 0px 20px;
+    margin: 0px 0.8rem;
     border: solid 2px #FF9900;
     box-shadow: inset 1px 1px 5px #0000002a;
     cursor: pointer;
+    margin-bottom:1rem;
     text-shadow: 1px 1px 2px #0000003a;
 }
 .botao-enviar{
-    font: bold 100% 'TT Commons Pro', sans-serif;
+    font: 2rem 'TT Commons Pro', sans-serif;
+    color: white;
     padding: 10px 15px;
     border-radius: 50px;
     border: none;
+    min-width:15rem;
+    min-height: 5rem;
     box-shadow: 1px 1px 4px #00000077;
-    background-color: #FF9900;
-    display: flex;
-    float: right;
-    transition: all 0.4s ease;
+    background-color: #282828;
     cursor: pointer;
 }
 .botao-enviar:hover{
     background-color: #e68a00;
-}
-@media screen and (max-width: 850px ){
-    .logo{
-        margin-left: 0px;
-    }
-    #back-btn img {
-        width: 70px; 
-        height: 70px;
-        filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.671));
-    }
-    h1{
-        margin: 20px;
-        font-size: 18px;
-    }
-    h2{
-        font-size: 18px;
-    }
-    select{
-        font-size: 16px;
-    }
-    #fundo-branco{
-        width: 80%;
-        margin: 10vh auto;
-    }
-
 }
