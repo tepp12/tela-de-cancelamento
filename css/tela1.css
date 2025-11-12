@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url('../fonts/TT-Commons-Regular.otf') format('otf');
+  src: url('../fonts/TT-Commons-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url('../fonts/TT-Commons-Bold.otf') format('otf');
+  src: url('../fonts/TT-Commons-Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url('../fonts/TT-Commons-Medium.otf') format('otf');
+  src: url('../fonts/TT-Commons-Medium.otf');
   font-weight: medium;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url("../fonts/TT-Commons-Light.otf") format('otf');
+  src: url("../fonts/TT-Commons-Light.otf");
   font-weight: light;
   font-style: normal;
 }

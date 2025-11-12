@@ -2,16 +2,14 @@
 /* copiei o :root da tela1 e @font-face da tela3 */
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url('../fonts/TT-Commons-Regular.otf') format('woff2'),
-       url('../fonts/TT-Commons-Regular.otf') format('woff');
+  src: url('../fonts/TT-Commons-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Commons Pro';
-  src: url('../fonts/TT-Commons-Bold.otf') format('woff2'),
-       url('../fonts/TT-Commons-Bold.otf') format('woff');
+  src: url('../fonts/TT-Commons-Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
