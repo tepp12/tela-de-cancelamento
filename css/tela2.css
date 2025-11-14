@@ -86,7 +86,7 @@ main{
 select{
     -webkit-appearance: none;
     -moz-appearance: none;
-     background: transparent;
+    background: transparent;
     background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M16 20.5333L8 12.5333L9.86667 10.6667L16 16.8L22.1333 10.6667L24 12.5333L16 20.5333Z' fill='black'/></svg>");
     background-repeat: no-repeat;
     background-position-x: 99%;
