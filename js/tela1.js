@@ -31,6 +31,8 @@ const list = document.querySelector("ul")
 
 if(isMobile.any()){
     header.style.justifyContent = "center"
+    header.style.position = "sticky"
+    header.style.top = "0"
     logo.style.marginLeft = "0px"
     panel.style.margin = "5rem auto 5rem auto"
 

@@ -94,7 +94,6 @@ header {
     background-color: var(--header-bg);
     color: var(--text-white);
     flex-wrap: wrap;
-    z-index: 1;
 }
 
 footer {

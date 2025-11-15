@@ -1,4 +1,3 @@
-
 /* copiei o :root da tela1 e @font-face da tela3 */
 @font-face {
   font-family: 'TT Commons Pro';
@@ -13,23 +12,41 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('../fonts/TT-Commons-Medium.otf');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url("../fonts/TT-Commons-Light.otf");
+  font-weight: light;
+  font-style: normal;
+}
+
 :root {
     --header-h: 80px;
     --text-white: #ffffff;      /* texto */
     --header-bg: #000000;    /* barra superior preta */
     --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
 }
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
 body{
     background-image: linear-gradient( to top ,  #0000008c , #0000008c) ,  url(../assets/backgroundimagepg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    margin:0;
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -38,29 +55,104 @@ header{
     background-color: var(--header-bg);
 }
 
-.logo {
-    margin-left: 10rem;
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+ul {
+    font-weight: light;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    gap:3rem;
+    font-size: 18px;
+}
+
+li {
+    text-align: center;
+}
+
+footer {
+    font-family: 'TT Commons Pro';
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000000;
+    color:white;
+    justify-content: space-between;
+    width:100%; 
 }
 
 main{
     flex-direction: column;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     min-height: 100vh;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M16 20.5333L8 12.5333L9.86667 10.6667L16 16.8L22.1333 10.6667L24 12.5333L16 20.5333Z' fill='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 1.3rem;
+    text-overflow: ellipsis;
+    padding: 1rem;
+    width: 77%;
+    height:100px;
+    font: 2rem 'TT Commons Pro';
+    text-indent: 2px;
+    margin: 0px 0.8rem;
+    border: solid 2px #FF9900;
+    box-shadow: inset 1px 1px 5px #0000002a;
+    cursor: pointer;
+    margin-bottom:1rem;
+    text-shadow: 1px 1px 2px #0000003a;
+}
+
+option {
+    font: 1.5rem 'TT Commons Pro';
+}
+
+#botao-enviar{
+    font: 2rem 'TT Commons Pro';
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    min-width:15rem;
+    min-height: 5rem;
+    box-shadow: 1px 1px 4px #00000077;
+    background-color: #282828;
+    cursor: pointer;
+}
+#botao-enviar:hover{
+    background-color: #e68a00;
 }
 
 #fundo-branco{
     display: flex;
     margin: 3rem auto;
     flex-direction: column;
+    flex-wrap: nowrap;
     width: 60%;
-    height:42rem;
+    height:55vh;
     border-radius: 32px;
     padding: 1rem;
     background-color: #f2f2f2;
     align-items: flex-start;
     justify-content: flex-start;
-    gap:0.5rem;
+    gap:1rem;
+}
+
+.logo {
+    margin-left: 10rem;
 }
 
 .arrow-back{
@@ -72,49 +164,25 @@ main{
 }
 
 .titulo-feedback{
-    font:  3.5rem 'TT Commons Pro', sans-serif;
+    font:  3.5rem 'TT Commons Pro'; 
     color: white;
     text-align: center;
     margin-bottom: 0px;
 }
 
 .texto-selecione{
-    font:  2.7rem 'TT Commons Pro', sans-serif;
-    margin: 10px;
+    font:  2.7rem 'TT Commons Pro'
 }
 
-select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: transparent;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M16 20.5333L8 12.5333L9.86667 10.6667L16 16.8L22.1333 10.6667L24 12.5333L16 20.5333Z' fill='black'/></svg>");
-    background-repeat: no-repeat;
-    background-position-x: 99%;
-    background-position-y: 0.5rem;
-    text-overflow: ellipsis;
-    padding: 1rem;
-    width: 100%;
-    font: normal 2rem 'TT Commons Pro', sans-serif;
-    text-indent: 2px;
-    margin: 0px 0.8rem;
-    border: solid 2px #FF9900;
-    box-shadow: inset 1px 1px 5px #0000002a;
-    cursor: pointer;
-    margin-bottom:1rem;
-    text-shadow: 1px 1px 2px #0000003a;
+.footer-text{
+    font-weight: light;
+    font-family: 'TT Commons Pro';
+    color:white;
+    font-size:18px;
+    margin-right: auto;
+    margin-left:3rem;
 }
-.botao-enviar{
-    font: 2rem 'TT Commons Pro', sans-serif;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
-    border: none;
-    min-width:15rem;
-    min-height: 5rem;
-    box-shadow: 1px 1px 4px #00000077;
-    background-color: #282828;
-    cursor: pointer;
-}
-.botao-enviar:hover{
-    background-color: #e68a00;
+
+.texto-direita {
+    margin-right: 5rem;
 }
