@@ -27,6 +27,7 @@ const button2 = document.querySelector(".button-perder")
 const footer = document.querySelector("footer")
 const footerText = document.querySelector(".footer-text")
 const list = document.querySelector("ul")
+const containerButton = document.querySelector(".container-button")
 
 
 if(isMobile.any()){
@@ -44,6 +45,10 @@ if(isMobile.any()){
     button2.style.fontSize = "1.5rem"
 
     footer.style.gap = "3rem"
+    containerButton.style.flexDirection = "column"
+    containerButton.style.justifyContent = "center"
+    containerButton.style.alignContent = "center"
+    containerButton.style.gap = "1rem"
     footer.style.justifyContent = "space-between"
     footerText.style.marginLeft = "1rem"
     if (window.screen.width <= 360) {
