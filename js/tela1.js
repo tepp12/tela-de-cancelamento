@@ -39,15 +39,15 @@ if(isMobile.any()){
 
     button1.style.minWidth = "8rem"
     button1.style.fontSize = "1.5rem"
-    button1.style.marginLeft = "3rem"
 
-    button2.style.minWidth = "5rem"
+    button2.style.minWidth = "8rem"
     button2.style.fontSize = "1.5rem"
 
     footer.style.gap = "3rem"
     containerButton.style.flexDirection = "column"
     containerButton.style.justifyContent = "center"
-    containerButton.style.alignContent = "center"
+    containerButton.style.alignItems = "center" 
+    
     containerButton.style.gap = "1rem"
     footer.style.justifyContent = "space-between"
     footerText.style.marginLeft = "1rem"
