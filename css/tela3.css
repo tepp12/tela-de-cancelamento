@@ -12,21 +12,18 @@
   font-style: normal;
 }
 
-
-
 :root {
     --header-h: 80px;
-    --text-white: #ffffff;      /* texto */
-    --header-bg: #000000;    /* barra superior preta */
-    --muted: rgba(0, 0, 0, 0.5);        /* bg translucido */
-    }
-
-* {
-    box-sizing: border-box;
+    --text-white: #ffffff;
+    --header-bg: #000000;
+    --muted: rgba(0, 0, 0, 0.5);
 }
 
-html,
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
     height: 100%;
 }
 
@@ -46,27 +43,20 @@ body {
     overflow-y: auto;
 }
 
-
-
-
 header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: var(--header-bg);
-            color: var(--text-white);
-            flex-wrap: wrap;
-            z-index: 9999;
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--header-bg);
+    color: var(--text-white);
+    flex-wrap: wrap;
+    z-index: 9999;
+}
 
-        /* Logo dentro do cabeçalho */
-        .logo {
-          margin-left:10rem;
-        }
-
-
-
+.logo {
+    margin-left: 10rem;
+}
 
 .back-btn {
     position: fixed;
@@ -84,7 +74,6 @@ header {
     cursor: pointer;
     z-index: 11;
     padding: 0;
-
 }
 
 .back-btn img {
@@ -92,7 +81,6 @@ header {
     height: 90px;
     display: block;
     filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
-
 }
 
 .content {
@@ -106,7 +94,6 @@ header {
     padding: 20px;
     gap: 28px;
 }
-
 
 .headline {
     margin: 0;
@@ -152,7 +139,6 @@ header {
     margin-right: 8px;
 }
 
-
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -166,6 +152,11 @@ header {
     border: none;
     font-size: 20px;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
 }
 
 .btn.gray {
@@ -174,39 +165,285 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+.btn.gray:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
 .btn.orange {
     background: #f5a623;
     color: #000;
     box-shadow: 0 6px 14px rgba(245, 166, 35, 0.18);
 }
 
-@media (max-width: 720px) {
+.btn.orange:hover {
+    box-shadow: 0 8px 18px rgba(245, 166, 35, 0.3);
+}
+
+/* Tablets pequenos e celulares grandes (landscape) - 600px */
+@media only screen and (max-width: 768px) {
+    :root {
+        --header-h: 70px;
+    }
+
+    header {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .logo {
+        margin-left: 2rem;
+    }
+
     .headline {
-        font-size: 18px;
+        font-size: 32px;
+        max-width: 100%;
     }
 
     .card {
-        padding: 28px;
+        padding: 32px 28px;
+        max-width: 95%;
     }
 
     .card-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .benefits {
+        font-size: 20px;
+        line-height: 1.7;
+        margin: 4px 4px 16px 4px;
+    }
+
+    .back-btn {
+        width: 56px;
+        height: 56px;
+        left: 14px;
+        top: calc(var(--header-h) + 12px);
+    }
+
+    .back-btn img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .btn {
         font-size: 18px;
+        padding: 11px 22px;
+    }
+}
+
+/* Celulares - 480px */
+@media only screen and (max-width: 600px) {
+    :root {
+        --header-h: 60px;
+    }
+
+    header {
+        padding: 0.6rem 1rem;
+    }
+
+    .logo {
+        margin-left: 0.5rem;
+        max-width: 150px;
+    }
+
+    .headline {
+        font-size: 24px;
+        padding: 0 8px;
+    }
+
+    .card {
+        padding: 24px 20px;
+        border-radius: 10px;
+    }
+
+    .card-title {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .benefits {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 3px 3px 14px 3px;
+    }
+
+    .benefits p {
+        margin: 10px 0;
     }
 
     .buttons {
         flex-direction: column;
+        gap: 12px;
     }
 
     .btn {
         width: 100%;
+        font-size: 16px;
+        padding: 10px 20px;
     }
 
     .back-btn {
-        left: 12px;
-        top: calc(var(--header-h) + 10px);
+        width: 48px;
+        height: 48px;
+        left: 10px;
+        top: calc(var(--header-h) + 8px);
     }
 
-    .topbar {
-        padding-left: 12px;
+    .back-btn img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .content {
+        padding: 15px;
+        gap: 20px;
+    }
+}
+
+/* Celulares muito pequenos - 375px */
+@media only screen and (max-width: 400px) {
+    .headline {
+        font-size: 20px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .benefits {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 9px 18px;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+}
+
+/* Tablets médios - 768px até 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .logo {
+        margin-left: 4rem;
+    }
+
+    .headline {
+        font-size: 36px;
+    }
+
+    .card {
+        padding: 36px 32px;
+    }
+
+    .card-title {
+        font-size: 38px;
+    }
+
+    .benefits {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 19px;
+    }
+}
+
+/* Desktops pequenos - 992px até 1200px */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .logo {
+        margin-left: 6rem;
+    }
+
+    .headline {
+        font-size: 38px;
+    }
+
+    .card-title {
+        font-size: 42px;
+    }
+
+    .benefits {
+        font-size: 24px;
+    }
+}
+
+/* Desktops grandes - acima de 1200px */
+@media only screen and (min-width: 1201px) {
+    .card {
+        width: 850px;
+    }
+
+    .headline {
+        font-size: 44px;
+        max-width: 1000px;
+    }
+
+    .card-title {
+        font-size: 48px;
+    }
+}
+
+/* celulares grandes*/
+@media only screen and  (max-width: 767px) {
+    .logo {
+        margin-left: 4rem;
+    }
+
+    .card {
+        width: 850px;
+    }
+
+   .headline {
+        font-size: 32px;
+    }
+
+    .card-title {
+        font-size: 28px;
+    }
+    .benefits {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+}
+
+/* Orientação landscape para celulares */
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+    .content {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .headline {
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 20px 24px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .benefits {
+        font-size: 14px;
+        margin: 2px 2px 12px 2px;
+    }
+
+    .back-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-btn img {
+        width: 50px;
+        height: 50px;
     }
 }
