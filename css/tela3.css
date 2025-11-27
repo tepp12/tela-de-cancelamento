@@ -160,9 +160,11 @@ p {
     margin-top: 12px;
 }
 
+
+
 .btn {
-    padding: 12px 26px;
     font-family: 'TT Commons Pro';
+    padding: 12px 26px;
     border-radius: 24px;
     border: none;
     font-size: 20px;
@@ -170,27 +172,59 @@ p {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.btn-txt {
+    z-index: 2;
+    position: relative;
+}
+
 .btn:hover {
     transform: translateY(-2px);
 }
 
-.btn.gray {
-    background: #333;
+#btn-cancelar {
+    background-color: #333;
     color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    cursor: not-allowed;
+    position: relative;
+    
 }
 
-.btn.gray:hover {
+#btn-cancelar:not([disabled]) {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.loading-bar-container {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.loading-bar-fill {
+    
+    width: 0%;
+    height: 100%;
+    background-color: #000000; 
+    transition: width 5s linear; 
+}
+
+#btn-cancelar:hover {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
-.btn.orange {
+#btn-aceitar {
     background: #f5a623;
     color: #000;
     box-shadow: 0 6px 14px rgba(245, 166, 35, 0.18);
 }
 
-.btn.orange:hover {
+#btn-aceitar:hover {
     box-shadow: 0 8px 18px rgba(245, 166, 35, 0.3);
 }
 
