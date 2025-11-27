@@ -75,6 +75,10 @@ main {
     z-index: 0;
 }
 
+p {
+    font-family: 'TT Commons Pro';
+}
+
 .logo {
     margin-left: 10rem;
 }
@@ -103,8 +107,9 @@ main {
     margin: 0;
     text-align: center;
     color: #fff;
+    font-family: 'TT Commons Pro';
     font-size: 40px;
-    font-weight: 700;
+    font-weight: bold;
     max-width: 900px;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
     padding: 0 12px;
@@ -118,19 +123,23 @@ main {
     padding: 40px 36px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-title {
-    margin: 0 0 18px 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 45px;
     text-align: center;
     color: #111;
 }
 
 .benefits {
-    margin: 6px 6px 20px 6px;
+    font-weight: medium;
+    margin: 6px 6px 5px 6px;
     line-height: 1.9;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .benefits p {
@@ -144,13 +153,17 @@ main {
 }
 
 .buttons {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: 12px;
 }
 
+
+
 .btn {
+    font-family: 'TT Commons Pro';
     padding: 12px 26px;
     border-radius: 24px;
     border: none;
@@ -159,27 +172,59 @@ main {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.btn-txt {
+    z-index: 2;
+    position: relative;
+}
+
 .btn:hover {
     transform: translateY(-2px);
 }
 
-.btn.gray {
-    background: #333;
+#btn-cancelar {
+    background-color: #333;
     color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    cursor: not-allowed;
+    position: relative;
+    
 }
 
-.btn.gray:hover {
+#btn-cancelar:not([disabled]) {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.loading-bar-container {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.loading-bar-fill {
+    
+    width: 0%;
+    height: 100%;
+    background-color: #000000; 
+    transition: width 5s linear; 
+}
+
+#btn-cancelar:hover {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
-.btn.orange {
+#btn-aceitar {
     background: #f5a623;
     color: #000;
     box-shadow: 0 6px 14px rgba(245, 166, 35, 0.18);
 }
 
-.btn.orange:hover {
+#btn-aceitar:hover {
     box-shadow: 0 8px 18px rgba(245, 166, 35, 0.3);
 }
 
