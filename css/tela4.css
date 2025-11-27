@@ -1,15 +1,31 @@
-    @font-face {
-      font-family: "ttcommons";
-      src: url("../fonts/TT-Commons-Regular.otf");
-      font-style: normal;
-      font-weight: normal;
-    }
-    @font-face {
-      font-family: "ttcommons";
-      src: url("../fonts/TT-Commons-Bold.otf");
-      font-style: normal;
-      font-weight: bold;
-    }
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('../fonts/TT-Commons-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('../fonts/TT-Commons-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url('../fonts/TT-Commons-Medium.otf');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons Pro';
+  src: url("../fonts/TT-Commons-Light.otf");
+  font-weight: light;
+  font-style: normal;
+}
+    
     :root {
       --text-white: #ffffff;      /* texto */
       --header-bg: #000000;    /* barra superior preta */
@@ -25,7 +41,7 @@
     html,body { 
       height:100%;
       overflow: hidden;
-      font-family: "ttcommons";
+      font-family: 'TT Commons Pro';
       font-weight: normal;
     }
 
@@ -77,18 +93,20 @@ main .content  {
 } 
 
 main h1 {
+  font-family: 'TT Commons Pro';
   font-size: 80px;
   margin-bottom: 10rem;
 }
 
 .botao-voltar {
+  font-family: 'TT Commons Pro';
   position: fixed;          /* Fixa o botão na tela */
   bottom: 20px;             /* Distância do fundo da janela */
   right: 20px;              /* Distância da borda direita */
   padding: 10px 20px;
   background-color: var(--text-white);
   color: var(--header-bg);
-  border-radius: 8px;
+  border-radius: 32px;
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);

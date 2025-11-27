@@ -75,6 +75,10 @@ main {
     z-index: 0;
 }
 
+p {
+    font-family: 'TT Commons Pro';
+}
+
 .logo {
     margin-left: 10rem;
 }
@@ -103,8 +107,9 @@ main {
     margin: 0;
     text-align: center;
     color: #fff;
+    font-family: 'TT Commons Pro';
     font-size: 40px;
-    font-weight: 700;
+    font-weight: bold;
     max-width: 900px;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
     padding: 0 12px;
@@ -118,19 +123,23 @@ main {
     padding: 40px 36px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-title {
-    margin: 0 0 18px 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 45px;
     text-align: center;
     color: #111;
 }
 
 .benefits {
-    margin: 6px 6px 20px 6px;
+    font-weight: medium;
+    margin: 6px 6px 5px 6px;
     line-height: 1.9;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .benefits p {
@@ -144,6 +153,7 @@ main {
 }
 
 .buttons {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -152,6 +162,7 @@ main {
 
 .btn {
     padding: 12px 26px;
+    font-family: 'TT Commons Pro';
     border-radius: 24px;
     border: none;
     font-size: 20px;
