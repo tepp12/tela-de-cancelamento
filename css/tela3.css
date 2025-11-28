@@ -79,6 +79,38 @@ p {
     font-family: 'TT Commons Pro';
 }
 
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+ul {
+    font-weight: light;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    gap:3rem;
+    font-size: 18px;
+}
+
+li {
+    text-align: center;
+}
+
+footer {
+    font-family: 'TT Commons Pro';
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000000;
+    color:white;
+    justify-content: space-between;
+    width:100%; 
+}
+
 .logo {
     margin-left: 10rem;
 }
@@ -160,6 +192,18 @@ p {
     margin-top: 12px;
 }
 
+.footer-text{
+    font-weight: light;
+    font-family: 'TT Commons Pro';
+    color:white;
+    font-size:18px;
+    margin-right: auto;
+    margin-left:3rem;
+}
+
+.texto-direita {
+    margin-right: 5rem;
+}
 
 
 .btn {

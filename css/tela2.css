@@ -186,3 +186,7 @@ option {
 .texto-direita {
     margin-right: 5rem;
 }
+
+.texto-direita.texto-esquerda::hover{
+    
+}   
