@@ -29,12 +29,12 @@ O fluxo foi desenhado para minimizar o *churn* (taxa de cancelamento), guiando o
 
 Abaixo, a lista dos 9 participantes do projeto e suas respectivas responsabilidades no desenvolvimento:
 
-1.  **[Nome do Participante 1]**: [Descreva aqui o que foi feito, ex: Desenvolvimento da Tela Inicial HTML/CSS]
-2.  **[Nome do Participante 2]**: [Descreva aqui o que foi feito, ex: Implementação da lógica JS de navegação]
-3.  **[Nome do Participante 3]**: [Descreva aqui o que foi feito, ex: Estilização responsiva e Design]
-4.  **[Nome do Participante 4]**: [Descreva aqui o que foi feito]
-5.  **[Nome do Participante 5]**: [Descreva aqui o que foi feito]
-6.  **[Nome do Participante 6]**: [Descreva aqui o que foi feito]
-7.  **[Nome do Participante 7]**: [Descreva aqui o que foi feito]
-8.  **[Nome do Participante 8]**: [Descreva aqui o que foi feito]
-9.  **[Nome do Participante 9]**: [Descreva aqui o que foi feito]
+*   Anna Sophia Fraga Souza | Responsável por: Referências de Pesquisa, Slides de Apresentação, Diagrama UML e Código da tela 3
+*   Danilo Salgado Carvalho | Responsável por: Problema, Personas, Solução e refatoração do código
+*   Guilherme Rêgo Ribeiro | Responsável por: Diagrama de fluxo de telas, Protótipo Navegável, Backlog, Diagrama UML e Código da tela 1 e refatoração do código
+*   João Gabriel Dias Arnaldo | Responsável por: Mapa de empatia, Personas, Diagrama UML e tela 5 e refatoração do código
+*   Larissa Castro Cardoso | Responsável por: Referências de Pesquisa, Slides de Apresentação e tela 4
+*   Lucas Rocha Santos | Responsável por: Personas, Jornadas, Protótipo Navegável e tela 2
+*   Mariana Menes Cardoso Ferreira | Responsável por: Problema, Referências de Pesquisa, Slides de Apresentação, Diagrama UML e tela 3
+*   Ronaldo Barbosa dos Santos Neto | Responsável por: Diagrama de fluxo de telas, Protótipo Navegável e tela 2
+*   Yan Francisco de Jesus Oliveira | Responsável por: Backlog
