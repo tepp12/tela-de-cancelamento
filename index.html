@@ -15,7 +15,7 @@
     </header>
     <main>
         <a href="https://engplay.com.br/"><img class="arrow-back" src="./assets/arrow.svg"></a>
-        <p class="mensagem" data-aos="fade-left" data-aos-duration="2000">Ao cancelar a inscrição hoje, voce perderá acesso a:</p>
+        <p class="mensagem" data-aos="fade-left" data-aos-duration="2000">Ao cancelar a inscrição hoje, você perderá acesso à:</p>
         <div class="panel">
             <div class="all-icons">
                 <div class="icon-container">
@@ -36,10 +36,17 @@
                 </div>
             </div>
             <div class="container-button">
-                <button class="button-perder"><a href="./tela2.html">Perder Acesso</a></button>
-                <button class="button-suporte"><a href="https://api.whatsapp.com/send?phone=557996874222&text=Estou%20precisando%20de%20uma%20ajuda%20sobre%20a%20Engplay">Suporte</a></button>
+                <button class="btn" id="btn-cancelar">
+                    <span class="btn-txt"><strong>Perder Acesso</strong></span>
+                    <div class="loading-bar-container">
+                        <div class="loading-bar-fill" id="loadingBarFill"></div>
+                    </div>
+                </button>
+                <button class="btn" id="btn-suporte"><strong>Suporte</strong></button>
             </div>
     </div>
+    
+    </main>
     <footer>
         <p class="footer-text">Engplay - Todos os direitos reservados 2025</p>
         <ul>
@@ -47,7 +54,6 @@
             <a href="https://engplay.com.br/politicas-de-privacidade/"><li class="texto-direita">Politícas de Privacidade</li></a>
         </ul>
     </footer>
-    </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

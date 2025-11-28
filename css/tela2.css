@@ -183,10 +183,15 @@ option {
     margin-left:3rem;
 }
 
+footer a {
+    transition: color 0.2s ease;
+}
+
+footer a:hover{
+    color: #333;
+}
+
 .texto-direita {
     margin-right: 5rem;
 }
 
-.texto-direita.texto-esquerda::hover{
-    
-}   

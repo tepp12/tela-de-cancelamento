@@ -110,11 +110,20 @@ main h1 {
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .botao-voltar:hover {
   background-color: #ddd; /* muda a cor quando passa o mouse */
+  transform: translateY(-2px);
+}
+
+footer a {
+    transition: color 0.2s ease;
+}
+
+footer a:hover{
+    color: #333;
 }
 
     /* responsividade simples para telas pequenas */

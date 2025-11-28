@@ -185,7 +185,6 @@ footer {
 }
 
 .buttons {
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -270,6 +269,14 @@ footer {
 
 #btn-aceitar:hover {
     box-shadow: 0 8px 18px rgba(245, 166, 35, 0.3);
+}
+
+footer a {
+    transition: color 0.2s ease;
+}
+
+footer a:hover{
+    color: #333;
 }
 
 /* Tablets pequenos e celulares grandes (landscape) - 600px */

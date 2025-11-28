@@ -29,6 +29,28 @@ const footerText = document.querySelector(".footer-text")
 const list = document.querySelector("ul")
 const containerButton = document.querySelector(".container-button")
 
+document.addEventListener('DOMContentLoaded', () => {
+    var btncancel = document.getElementById('btn-cancelar');
+    var btnsuporte = document.getElementById('btn-suporte');
+    var loadingBarFill = document.getElementById('loadingBarFill');
+    const delayTime = 5000; // 5 segundos
+    btncancel.disabled = true;
+
+
+  // Começa a animação de barra enchendo
+    loadingBarFill.style.width = '100%';
+
+  // Coloca um tempo para ativar o botão, após a animação
+    setTimeout(function() {
+        btncancel.disabled = false; // Ativa o botão
+        btncancel.querySelector('.loading-bar-container').style.display = 'none'; // Esconde a barra de carregamento 
+        }, delayTime);                                                      // caso a barra de carregamento tenha cor diferente do botão
+        btncancel.addEventListener('click', function() {
+        window.location.href = 'tela2.html';
+    });
+    btnsuporte.addEventListener('click', function() {
+        window.location.href = 'https://api.whatsapp.com/send?phone=557996874222&text=Estou%20precisando%20de%20uma%20ajuda%20sobre%20a%20Engplay';})
+});
 
 if(isMobile.any()){
     header.style.justifyContent = "center"
