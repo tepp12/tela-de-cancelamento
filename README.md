@@ -2,6 +2,11 @@
 
 Este projeto consiste no desenvolvimento de um fluxo interativo de telas para o processo de cancelamento de assinatura da plataforma **EngPlay**. O objetivo principal é gerenciar a retenção de usuários através de uma experiência estratégica que não apenas permite o cancelamento, mas também coleta feedback valioso e oferece incentivos personalizados para encorajar a permanência do assinante.
 
+## Como Executar
+
+1 - Extrair o arquivo do projeto
+2 - Executar o arquivo index.html
+
 ## Contexto e MVP
 
 *   **O Problema:** A Engplay enfrenta atualmente uma taxa de *churn* de 9,72%, um índice considerado acima da média ideal. Além disso, identificou-se um distanciamento em relação aos usuários, dificultando o entendimento de suas insatisfações.
