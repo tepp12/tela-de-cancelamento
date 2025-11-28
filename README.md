@@ -4,7 +4,7 @@ Este projeto consiste no desenvolvimento de um fluxo interativo de telas para o 
 
 ## Como Executar
 
-1 - Extrair o arquivo do projeto
+1 - Extrair o arquivo do projeto  
 2 - Executar o arquivo index.html
 
 ## Contexto e MVP
