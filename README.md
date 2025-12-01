@@ -16,6 +16,34 @@ O fluxo foi desenhado para minimizar o *churn* (taxa de cancelamento), guiando o
 3.  **Oferta de Retenção:** Antes da confirmação final, a terceira tela (`tela3.html`) apresenta uma oferta especial (ex: descontos ou pausas) como uma última tentativa de reter o cliente.
 4.  **Conclusão:** O fluxo se encerra com telas de feedback positivo (`tela4.html` se aceitou a oferta) ou de despedida (`tela5.html` se confirmou o cancelamento).
 
+##  Como Usar
+
+### Acessar Online
+Acesse o projeto diretamente pelo GitHub Pages (se disponível) ou visualize o código-fonte no repositório:
+ [https://github.com/tepp12/tela-de-cancelamento](https://github.com/tepp12/tela-de-cancelamento)
+
+### Clonar o Repositório
+Para rodar o projeto localmente, siga os passos abaixo:
+
+1.  **Copie o link do repositório:**
+    -   Acesse [https://github.com/tepp12/tela-de-cancelamento](https://github.com/tepp12/tela-de-cancelamento)
+    -   Clique no botão verde **"<> Code"**
+    -   Copie a URL HTTPS: `https://github.com/tepp12/tela-de-cancelamento.git`
+
+2.  **Abra o terminal** (Git Bash, CMD ou PowerShell) e execute:
+    ```bash
+    git clone https://github.com/tepp12/tela-de-cancelamento.git
+    ```
+
+3.  **Acesse a pasta do projeto:**
+    ```bash
+    cd tela-de-cancelamento
+    ```
+
+4.  **Abra o arquivo `index.html`** no seu navegador para visualizar o projeto.
+
+---
+
 ## Tecnologias Utilizadas
 
 *   **HTML5:** Estruturação semântica das páginas.
@@ -29,12 +57,12 @@ O fluxo foi desenhado para minimizar o *churn* (taxa de cancelamento), guiando o
 
 Abaixo, a lista dos 9 participantes do projeto e suas respectivas responsabilidades no desenvolvimento:
 
-1.  **[Nome do Participante 1]**: [Descreva aqui o que foi feito, ex: Desenvolvimento da Tela Inicial HTML/CSS]
-2.  **[Nome do Participante 2]**: [Descreva aqui o que foi feito, ex: Implementação da lógica JS de navegação]
-3.  **[Nome do Participante 3]**: [Descreva aqui o que foi feito, ex: Estilização responsiva e Design]
-4.  **[Nome do Participante 4]**: [Descreva aqui o que foi feito]
-5.  **[Nome do Participante 5]**: [Descreva aqui o que foi feito]
-6.  **[Nome do Participante 6]**: [Descreva aqui o que foi feito]
-7.  **[Nome do Participante 7]**: [Descreva aqui o que foi feito]
-8.  **[Nome do Participante 8]**: [Descreva aqui o que foi feito]
-9.  **[Nome do Participante 9]**: [Descreva aqui o que foi feito]
+1.  **Anna Sophia**: Responsável por: Referências de Pesquisa, Slides de Apresentação, Diagrama UML e Código da tela 3.
+2.  **Danilo Salgado**:  Responsável por: Problema, Personas, Solução e Código da tela 6.
+3.  **Guilherme Ribeiro**: Responsável por: Diagrama de fluxo de telas, Protótipo Navegável, Backlog, Diagrama UML e Código da tela 7.
+4.  **João Gabriel Dias**: Responsável por: Mapa de empatia, Personas, Diagrama UML e tela 5.
+5.  **Larissa Castro**: Responsável por: Referências de Pesquisa, Análise de concorrentes, Slides de Apresentação e tela 4.
+6.  **Lucas Rocha**: Responsável por: Personas, Jornadas, Protótipo Navegável, Definição de stacks, mvp, diagrama UML e tela 2.
+7.  **Mariana Menes**:  Responsável por: Problema, Referencias de Pesquisa, Slides de Apresentação, Diagrama UML e tela 3.
+8.  **Ronaldo Barbosa**: Responsável por: Diagrama de fluxo de telas, Protótipo Navegável e tela 2.
+9.  **Yan Francisco**: Responsável por: Backlog.
