@@ -19,8 +19,8 @@ O fluxo foi desenhado para minimizar o *churn* (taxa de cancelamento), guiando o
 ##  Como Usar
 
 ### Acessar Online
-Acesse o projeto diretamente pelo GitHub Pages (se disponível) ou visualize o código-fonte no repositório:
- [https://github.com/tepp12/tela-de-cancelamento](https://github.com/tepp12/tela-de-cancelamento)
+Acesse o projeto diretamente pelo GitHub Pages:
+[https://tepp12.github.io/tela-de-cancelamento](https://tepp12.github.io/tela-de-cancelamento/index.html)
 
 ### Clonar o Repositório
 Para rodar o projeto localmente, siga os passos abaixo:
