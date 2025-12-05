@@ -23,8 +23,8 @@ const isMobile = {
 const header = document.querySelector("header")
 const logo = document.querySelector(".logo")
 const panel = document.querySelector(".panel")
-const button1 = document.querySelector(".button-suporte")
-const button2 = document.querySelector(".button-perder")
+const button1 = document.querySelector("#btn-suporte")
+const button2 = document.querySelector("#btn-cancelar")
 const footer = document.querySelector("footer")
 const footerText = document.querySelector(".footer-text")
 const list = document.querySelector("ul")
@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 if(isMobile.any()){
     header.style.justifyContent = "center"
-    header.style.position = "sticky"
     header.style.top = "0"
     logo.style.marginLeft = "0px"
     panel.style.margin = "5rem auto 5rem auto"

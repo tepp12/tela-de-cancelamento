@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Engplay - Oferta Especial</title>
     <link rel="stylesheet" href="css/tela3.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,11 +16,11 @@
     </header>
     <a href="./tela2.html"><img class="arrow-back" src="./assets/arrow.svg"></a>
     <main class="content" role="main">
-        <h1 class="headline">
+        <p class="headline" data-aos="fade-down" data-aos-duration="1500">
             Antes de finalizar o cancelamento, aproveite nossa oferta especial.
-        </h1>
+        </p>
 
-        <div class="card" role="dialog" aria-labelledby="oferta-title">
+        <div class="card" role="dialog" aria-labelledby="oferta-title" data-aos="fade-down" data-aos-duration="2000">
             <p id="oferta-title" class="card-title"><strong>50% de desconto exclusivo só para você.</strong></p>
 
             <div class="benefits">
@@ -30,12 +31,12 @@
 
             <div class="buttons">
                 <button class="btn" id="btn-cancelar">
-                    <span class="btn-txt"><strong>Perder Acesso</strong></span>
+                    <span class="btn-txt">Perder Acesso</span>
                     <div class="loading-bar-container">
                         <div class="loading-bar-fill" id="loadingBarFill"></div>
                     </div>
                 </button> 
-                <button class="btn" id="btn-aceitar"><strong>Aceitar Oferta</strong></button>
+                <button class="btn" id="btn-aceitar">Aceitar Oferta</button>
             </div>
         </div>
     </main>
@@ -47,5 +48,10 @@
         </ul>
     </footer>
     <script src="js/tela3.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src ="./js/tela1.js"></script>
 </body>
 </html>

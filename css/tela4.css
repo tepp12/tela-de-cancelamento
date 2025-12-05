@@ -104,7 +104,6 @@ main h1 {
   bottom: 20px;             /* Distância do fundo da janela */
   right: 20px;              /* Distância da borda direita */
   padding: 10px 20px;
-  font-size: 2rem;
   background-color: var(--text-white);
   color: var(--header-bg);
   border-radius: 32px;
@@ -117,6 +116,10 @@ main h1 {
 .botao-voltar:hover {
   background-color: #ddd; /* muda a cor quando passa o mouse */
   transform: translateY(-2px);
+}
+
+.title {
+  font-size: 4rem;
 }
 
 footer a {

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/tela2.css">
     <title>Feedback</title>
     <link rel="shortcut icon" href="assets/logoplaceholder.ico" type="image/x-icon">
@@ -16,8 +17,8 @@
     </header>
     <a href="./index.html"><img class="arrow-back" src="./assets/arrow.svg"></a>
     <main>
-        <p class="titulo-feedback">Dê feedback para que possamos te ajudar.</p>
-        <section id="fundo-branco">
+        <p class="titulo-feedback" data-aos="fade-down" data-aos-duration="1500">Dê feedback para que possamos te ajudar.</p>
+        <section id="fundo-branco" data-aos="fade-down" data-aos-duration="1500">
             <p class="texto-selecione">Selecione o motivo da sua saída:</p>
             <article>
                 <select id="motivo" name="motivo">
@@ -36,6 +37,10 @@
             <a href="https://engplay.com.br/politicas-de-privacidade/"><li class="texto-direita">Politícas de Privacidade</li></a>
         </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/tela2.js"></script>
 </body>
 </html>

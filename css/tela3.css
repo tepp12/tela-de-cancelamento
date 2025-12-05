@@ -140,8 +140,8 @@ footer {
     text-align: center;
     color: #fff;
     font-family: 'TT Commons Pro';
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 60px;
+    font-weight: medium;
     max-width: 900px;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
     padding: 0 12px;
@@ -518,7 +518,7 @@ footer a:hover{
     }
 
     .headline {
-        font-size: 44px;
+        font-size: 50px;
         max-width: 1000px;
     }
 
