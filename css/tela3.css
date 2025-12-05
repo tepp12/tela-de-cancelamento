@@ -330,6 +330,16 @@ footer a:hover{
         font-size: 18px;
         padding: 11px 22px;
     }
+
+    footer {
+        gap: 3rem;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .footer-text{
+        margin-left: 1rem;
+    }
 }
 
 /* Celulares - 480px */
@@ -399,6 +409,16 @@ footer a:hover{
         padding: 15px;
         gap: 20px;
     }
+
+    footer {
+        gap: 3rem;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .footer-text{
+        margin-left: 1rem;
+    }
 }
 
 /* Celulares muito pequenos - 375px */
@@ -422,6 +442,16 @@ footer a:hover{
 
     .logo {
         max-width: 120px;
+    }
+
+    footer {
+        gap: 3rem;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .footer-text{
+        margin-left: 1rem;
     }
 }
 
@@ -449,6 +479,16 @@ footer a:hover{
 
     .btn {
         font-size: 19px;
+    }
+
+    footer {
+        gap: 3rem;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .footer-text{
+        margin-left: 1rem;
     }
 }
 
@@ -510,6 +550,16 @@ footer a:hover{
 
     .btn {
         font-size: 20px;
+    }
+
+    footer {
+        gap: 3rem;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .footer-text{
+        margin-left: 1rem;
     }
 }
 

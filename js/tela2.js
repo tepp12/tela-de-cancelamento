@@ -37,7 +37,8 @@ const input = document.createElement("input")
 input.id = "my-input"
 
 if(isMobile.any()){
-    body.style.overflow = "visible"
+    console.log("working")
+    body.style.overflow = "hidden"
     header.style.justifyContent = "center"
     header.style.position = "sticky"
     header.style.top = "0"

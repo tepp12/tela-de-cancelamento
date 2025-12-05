@@ -39,7 +39,12 @@
     padding: 0px;
 }
 
+body, html {
+overflow-x: hidden;
+}
+
 body{
+    overflow-x: hidden;
     background-image: linear-gradient( to top ,  #0000008c , #0000008c) ,  url(../assets/backgroundimagepg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
